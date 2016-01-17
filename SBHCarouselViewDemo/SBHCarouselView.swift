@@ -76,6 +76,10 @@ class SBHCarouselView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     var autoScroll:Bool! {
         didSet {
             if autoScroll == true {
+            if timer != nil {
+                timer!.invalidate()
+                timer = nil
+            }
                 setupTimer()
             }else {
                 timer?.invalidate()
