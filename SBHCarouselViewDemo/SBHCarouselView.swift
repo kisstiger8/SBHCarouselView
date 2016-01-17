@@ -64,7 +64,7 @@ class SBHCarouselView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     //自动滚动的时间间隔，默认4s
     var autoScrollTimeInterval:NSTimeInterval! {
         didSet {
-            if timer != nil {
+            if let _ = timer {
                 timer!.invalidate()
                 timer = nil
             }
@@ -76,7 +76,7 @@ class SBHCarouselView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     var autoScroll:Bool! {
         didSet {
             if autoScroll == true {
-            if timer != nil {
+            if let _ = timer {
                 timer!.invalidate()
                 timer = nil
             }
