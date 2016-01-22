@@ -39,4 +39,4 @@ Rely on SDWebImage Support local and network pictures
         
         
 <br>
-![image](/Simulator Screen Shot 2016年1月20日 上午1.47.00.png)
+![image](/1.gif)
